@@ -41,7 +41,6 @@ if args.command == "export":
 
 if args.command == "deploy":
     with tempfile.TemporaryDirectory() as tmpdir:
-      print(tmpdir)
       subprocess.run(["git", "clone", "--branch", args.branch, args.input, tmpdir])
       arguments = ['databricks', 'workspace',
                    'import_dir', tmpdir, args.output, "-e"]
