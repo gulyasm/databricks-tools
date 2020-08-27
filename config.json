@@ -1,0 +1,10 @@
+{
+    "temppath": "./migration-github-test",
+    "output-path": "/Users/gulyasm@datapao.com/archive-test/",
+    "force": true,
+    "new-workspace-url": "",
+    "new-workspace-token": "",
+    "skip-users": true,
+    "new-profile": "migration-new",
+    "old-profile": "migration-old"
+}
