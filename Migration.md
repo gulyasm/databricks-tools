@@ -1,8 +1,12 @@
 # Migration Documentation
 
 ## Requirements
-<br>#### 1. Install dependencies from `requirements.txt`
-<br>#### 2. Configure the old and new profiles for Databricks CLI. 
+
+
+#### 1. Install dependencies from `requirements.txt`
+
+
+#### 2. Configure the old and new profiles for Databricks CLI. 
 The Databricks CLI config:
 ```
 [<OLD_WORKSPACE_PROFILE>]
@@ -14,7 +18,9 @@ host = <NEW_WORKSPACE_URL>
 token = <NEW_WORKSPACE_TOKEN>
 ```
 The profile names can be anything
-<br>#### 3. Configure migration script (`config.json`):
+
+
+#### 3. Configure migration script (`config.json`):
 ```json
 {
     "temppath": "<TEMPPATH>",
@@ -38,7 +44,9 @@ The profile names can be anything
 - `new-profile`: The new workspace profile in the Databricks CLI config
 - `old-profile`: The old workspace profile in the Databricks CLI config
 
-<br>#### 4. Run the migration script:
+
+
+#### 4. Run the migration script:
   - migrate-users: Migrate Users and their notebooks
   - migrate-clusters: Migrate interactive cluster configurations. Creates and terminates clusters. If the new clusters are idle for 90 days, they will be deleted. Doesn't work on cross-cloud migrations.
   - migrate-root: Migrate notebooks on the workspace root. Doesn't migrate `Users` and `Shared`
