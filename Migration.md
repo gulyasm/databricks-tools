@@ -8,7 +8,8 @@
 
 #### 2. Configure the old and new profiles for Databricks CLI. 
 The Databricks CLI config:
-```
+
+```config
 [<OLD_WORKSPACE_PROFILE>]
 host = <OLD_WORKSPACE_URL>
 token = <OLD_WORKSPACE_TOKEN>
