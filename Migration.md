@@ -48,7 +48,9 @@ The profile names can be anything
 
 
 #### 4. Run the migration script:
-Available commands:
+Available commands:v1
+{"batchWatermarkMs":0,"batchTimestampMs":1598538406828,"conf":{"spark.sql.streaming.stateStore.providerClass":"org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider","spark.sql.streaming.join.stateFormatVersion":"2","spark.sql.streaming.flatMapGroupsWithState.stateFormatVersion":"2","spark.sql.streaming.multipleWatermarkPolicy":"min","spark.sql.streaming.aggregation.stateFormatVersion":"2","spark.sql.shuffle.partitions":"200"}}
+237
   - `migrate-users`: Migrate Users and their notebooks
   - `migrate-clusters`: Migrate interactive cluster configurations. Creates and terminates clusters. If the new clusters are idle for 90 days, they will be deleted. Doesn't work on cross-cloud migrations.
   - `migrate-root`: Migrate notebooks on the workspace root. Doesn't migrate `Users` and `Shared`
