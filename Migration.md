@@ -51,4 +51,4 @@ The profile names can be anything
 Available commands:
   - `migrate-users`: Migrate Users and their notebooks
   - `migrate-clusters`: Migrate interactive cluster configurations. Creates and terminates clusters. If the new clusters are idle for 90 days, they will be deleted. Doesn't work on cross-cloud migrations.
-  - `migrate-root`: Migrate notebooks on the workspace root. Doesn't migrate `Users` and `Shared`
+  - `migrate-root-notebooks`: Migrate notebooks on the workspace root. Doesn't migrate `Users` and `Shared`
